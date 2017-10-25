@@ -1,0 +1,225 @@
+.about-hero {
+    &>img {
+        width: 100%;
+        
+        @media (min-width: @screen-sm-min) {
+            display: none;
+        }
+    }
+
+    @media (min-width: @screen-sm-min) {
+        background-image: url("../assets/about_header_img-2x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 70px;
+        padding-bottom: 340px;
+    }
+
+    .hero-text {
+        h1 {
+            text-transform: capitalize;
+            
+            @media (min-width: @screen-sm-min) {
+                text-transform: uppercase;
+            }
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.gradient {
+    height: 170px;
+    .ansell-gradient;
+
+    >img {
+        height: 170px;
+        width: 100%;
+
+        @media (min-width: @screen-md-min) {
+            height: 100%;
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        width: 100px;
+        height: 100px;
+        float: left;
+        
+    }
+}
+
+.description-list {
+    padding: 20px;
+
+    li {
+        font-size: 14px;
+        line-height: 20px;
+
+        @media (min-width: @screen-md-min) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    a {
+        color: @ansell-dark;
+        text-decoration: underline;
+    }
+
+    @media (min-width: @screen-md-min) {
+        width: 360px;
+        padding: 12px 12px 12px 45px;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: @screen-lg-min) {
+        width: 460px;
+    }
+}
+
+.feature-row,
+.feature-slider {
+    img {
+        width: 100%;
+    }
+}
+
+.feature-slider {
+    margin-bottom: 40px;
+
+    .slick-dots {
+        margin-top: 20px;
+    }
+}
+
+.feature-row {
+    margin: 0 -10px;
+
+    >[class*="col-"] {
+        padding: 0 10px;
+
+        @media (min-width: @screen-md-min) {
+            margin-bottom: 30px;
+
+            &:nth-child(2n + 1) {
+                clear: left;
+            }
+        }
+
+        @media (min-width: @screen-lg-min) {
+            &:nth-child(2n + 1) {
+                clear: none;
+            }
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        margin-bottom: 30px;
+    }
+}
+
+.feature-description {
+    h6 {
+        font-family: 'Asap-Bold';
+        font-size: 16px;
+        color: @ansell-light;
+        margin-top: 20px;
+        margin-bottom: 12px;
+
+        @media (min-width: @screen-md-min) {
+            font-size: 18px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+
+        @media (min-width: @screen-md-min) {
+           font-size: 16px;
+           line-height: 24px; 
+        }
+    }
+}
+
+.slick-dots {
+    li {
+        height: 7px;
+        width: 7px;
+        background-color: #000;
+        border-radius: 50%;
+        vertical-align: middle;
+
+        &.slick-active {
+            height: 10px;
+            width: 10px;
+            background-color: @ansell-light;
+        }
+    }
+}
+
+.frame { 
+    width: 100%;  
+    padding: 0; 
+
+    .slidee { 
+        margin: 0; 
+        padding: 0; 
+        height: 100%; 
+        list-style: none; 
+
+        li { 
+            float: left; 
+            padding: 0;
+
+            &.right-arrow {
+                width: 75px;
+                height: 100px;
+                background-image: url("../assets/right_arrow.jpg");
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                margin: 70px 20px 0;
+            }
+
+            p {
+                color: @footer-bottom;
+                margin-bottom: 20px;
+
+                @media (min-width: @screen-md-min) {
+                    text-align: center;
+                }
+            }
+        }
+
+        .slidee-right-arrow {
+            background-image: url("../assets/iconset_arrow_right.svg");
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+        }
+    }
+
+    
+}
+.scrollbar { 
+    width: 100%; 
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    .handle {
+        width: 100px; /* overriden if dynamicHandle: 1 */
+        height: 100%;
+        background: @scroll;
+        border-radius: 5px;
+    }
+
+    @media (min-width: 1500px) {
+        display: none;
+    }
+}

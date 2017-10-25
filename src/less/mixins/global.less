@@ -1,0 +1,75 @@
+body {
+    color: @default-color;
+    font-family: 'Asap-Regular';
+    font-size: 18px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.content-wrapper-980 {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-wrapper-1470 {
+    max-width: 1510px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    h2 {
+        font-size: 24px;
+        color: @ansell-light;
+        font-family: 'Asap-Bold';
+        margin-bottom: 20px;
+
+        @media (min-width: @screen-md-min) {
+            font-family: 'Asap-Regular';
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 100px;
+            margin-top: 65px;
+        }
+    }
+
+    h4 {
+        font-size: 14px;
+        color: @ansell-light;
+        margin-top: 45px;
+        margin-bottom: 20px;
+
+        @media (min-width: @screen-md-min) {
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+    }
+}
+
+.btn-transparent {
+    background-color: transparent;
+    width: 100%;
+    padding: 7px 0;
+    text-transform: uppercase;
+
+    @media (min-width: @screen-sm-min) {
+        padding: 0;
+        line-height: 23px;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.ansell-text {
+    color: @ansell-light;
+
+    &:hover {
+        color: @ansell-light;
+    }
+}

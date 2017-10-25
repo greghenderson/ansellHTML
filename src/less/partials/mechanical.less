@@ -1,0 +1,223 @@
+.content-wrapper-1470 {
+    h2.mechanical {
+        @media (min-width: @screen-md-min) {
+            margin-bottom: 45px;
+        }
+    }
+
+    p.mechanical {
+        @media (min-width: @screen-md-min) {
+            text-align: center;
+        }
+    }
+
+    img.mechanical {
+        @media (min-width: @screen-sm-min) {
+            margin-top: 55px;
+        }
+    }
+}
+
+.mechanical-hero {
+    &>img {
+        width: 100%;
+        
+        @media (min-width: @screen-sm-min) {
+            display: none;
+        }
+    }
+
+    @media (min-width: @screen-sm-min) {
+        background-image: url("../assets/mechanical_protection_header_img-2x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 70px;
+        padding-bottom: 340px;
+    }
+
+    .hero-text {
+        h1 {
+            text-transform: capitalize;
+            
+            @media (min-width: @screen-sm-min) {
+                text-transform: uppercase;
+            }
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.solutions-row {
+    margin: 10px -10px 0;
+
+    >[class*="col-"] {
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 100%;
+
+        @media (min-width: @screen-md-min) {
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (min-width: @screen-md-min) {
+        margin: 40px -10px 0;
+    }
+
+    .border {
+        border: 1px solid @border;
+    }
+}
+
+.solution {
+    background-color: @ansell-light;
+    padding: 25px 12px;
+
+    p {
+        display: inline-block;
+        margin: 0;
+        font-family: 'Asap-Bold';
+        vertical-align: middle;
+        color: @white;
+
+        @media (min-width: @screen-lg-min) {
+            font-size: 24px;
+        }
+    }
+
+    @media (min-width: @screen-lg-min) {
+        padding: 35px 24px;
+    }
+}
+
+.solution-img {
+    padding: 0 24px;
+
+    img {
+        margin-bottom: 15px;
+
+        @media (min-width: @screen-md-min) {
+            margin-bottom: 25px;
+        }
+    }
+
+    ul {
+        padding: 16px 0 16px 16px;
+        margin-bottom: 0;
+
+        @media (min-width: @screen-md-min) {
+            height: 220px;
+            margin-bottom: 50px;
+        }
+
+        @media (min-width: @screen-lg-min) {
+            margin-bottom: 0;
+        }
+    }
+
+    li {
+        font-size: 14px;
+
+        @media (min-width: @screen-md-min) {
+            font-size: 18px;
+        }
+    }
+}
+
+.iconset {
+    &.header {
+        display: inline-block;
+
+        img {
+            width: 45px;
+            height: 100%;
+            margin-right: 10px;
+            margin-bottom: 0;
+
+            @media (min-width: @screen-sm-min) {
+                margin-right: 20px;
+            }
+
+            @media (min-width: @screen-md-min) {
+                width: 65px;
+            }
+        }
+
+        p {
+            text-transform: uppercase;
+        }
+    }
+
+    &.arrow {
+        display: inline-block;
+
+        img {
+            width: 40px;
+            height: 100%;
+            margin-bottom: 0;
+            margin-left: -12px;
+        }
+
+        p {
+            letter-spacing: -1px;
+            margin-left: -10px;
+
+            @media (min-width: @screen-sm-min) {
+                letter-spacing: normal;
+                margin-left: 0;
+            }
+
+            @media (min-width: @screen-md-min) {
+                font-size: 16px;
+            }
+
+            @media (min-width: @screen-lg-min) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.more-information {
+    margin-top: 5px;
+    margin-bottom: 40px;
+
+    img {
+        display: inline-block;
+        width: 15px;
+        margin-right: 15px;
+        vertical-align: top;
+
+        @media (min-width: @screen-md-min) {
+            vertical-align: middle;
+        }
+    }
+
+    p {
+        display: inline-block;
+        width: 80%;
+        vertical-align: middle;
+        margin: 0;
+
+        @media (min-width: @screen-sm-min) {
+            width: 90%;
+        }
+    }
+
+    a {
+        font-family: 'Asap-Bold';
+        color: @footer-bottom;
+    }
+
+    @media (min-width: @screen-md-min) {
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+}
