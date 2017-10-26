@@ -8299,6 +8299,8 @@ body {
 @media (min-width: 768px) {
   .contact-us a {
     color: #ffffff;
+    padding: 25px;
+    display: block;
   }
 }
 @media (min-width: 768px) {
@@ -8317,7 +8319,6 @@ body {
     background-image: url("../assets/landingpage_teaser_orange-2x.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    padding: 25px;
   }
 }
 footer {
@@ -8576,7 +8577,7 @@ footer a:hover {
   margin: 0;
   padding: 0;
   height: 100%;
-  list-style: none;
+  list-style-type: none;
 }
 .frame .slidee li {
   float: left;
