@@ -1,0 +1,166 @@
+.faq-intro-desktop {
+    display: none;
+
+    h1 {
+       font-family: 'Asap-Bold';
+       font-size: 42px;
+       color: @ansell-light;
+       text-transform: uppercase;
+       margin-top: 30px;
+       margin-bottom: 45px;
+       
+       @media (min-width: @screen-md-min) {
+           font-size: 50px;
+       }
+
+       @media (min-width: @screen-lg-min) {
+           font-size: 70px;
+       }
+    }
+
+    @media (min-width: @screen-sm-min) {
+        display: block;
+    }
+}
+
+.faq-intro-mobile {
+    h1 {
+        color: @ansell-light;
+        font-size: 32px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin-bottom: 65px;
+    }
+
+     @media (min-width: @screen-sm-min) {
+        display: none;
+    }
+}
+
+.video-col {
+    clear:left;
+
+    p {
+        margin-bottom: 55px;
+    }
+}
+
+.faq-video {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#accordion {
+    .panel-number,
+    .panel-title,
+    .panel-arrow {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .panel-number {
+        margin-right: 12px;
+        font-size: 38px;
+        font-family: 'Asap-Bold';
+
+        @media (min-width: @screen-sm-min) {
+            margin-right: 22px;
+        }
+    }
+
+    .panel-title {
+        max-width: 70%;
+        width: 100%;
+    }
+
+    .panel-arrow {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        @media (min-width: @screen-sm-min) {
+            right: 20px;
+        }
+    }
+}
+
+.panel-default {
+    border-color: @ansell-light;
+
+    &>.panel-heading {
+        display: block;
+        padding: 10px;
+        color: @ansell-light;
+        background-color: @active-accordion;
+        position: relative;
+        text-decoration: none;
+
+        @media (min-width: @screen-sm-min) {
+            padding: 16px 20px;
+        }
+
+        .panel-title {
+            font-family: 'Asap-Bold';
+            margin: 0;
+            color: @ansell-light;
+        }
+
+        .panel-arrow {
+            .fa-chevron-down {
+                display: none;
+            }
+
+            .fa-chevron-up {
+                display: block;
+            }
+        }
+
+        &.collapsed {
+            color: @white;
+            background-color: @ansell-light;
+
+            .panel-title {
+                color: @white;
+            }
+
+            .panel-arrow {
+                .fa-chevron-up {
+                    display: none;
+                }
+
+                .fa-chevron-down {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.panel-body {
+    padding: 15px 40px;
+    font-size: 14px;
+
+    a {
+        color: @default-color;
+        text-decoration: underline;
+    }
+
+    @media (min-width: @screen-sm-min) {
+        font-size: 16px;
+        padding: 25px 65px;
+    }
+}
