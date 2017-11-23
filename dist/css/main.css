@@ -8120,7 +8120,7 @@ body {
 }
 @media (min-width: 992px) {
   .hero-teasers {
-    margin-top: 415px;
+    margin-top: 340px;
     margin-left: -5px;
     margin-right: -5px;
     max-width: 100%;
@@ -8883,7 +8883,7 @@ footer a:hover {
 .video-col {
   clear: left;
 }
-.video-col p {
+.video-col > p {
   margin-bottom: 55px;
 }
 .faq-video {
@@ -8992,4 +8992,110 @@ footer a:hover {
 .panel-group .panel-heading + .panel-collapse > .panel-body,
 .panel-group .panel-heading + .panel-collapse > .list-group {
   border-top: 1px solid #00ac9a;
+}
+.case-study-row {
+  margin: 0;
+}
+.case-study-row .case-study-col {
+  padding: 0;
+}
+.case-study {
+  margin-bottom: 30px;
+}
+.case-study h1 {
+  color: #00ac9a;
+}
+.case-study .iconset {
+  height: 115px;
+  position: relative;
+  background-image: -moz-linear-gradient(top left, #00ac9a 0%, #00ac9a 60%, #00a28f 60%, #00a28f 100%);
+  background-image: -o-linear-gradient(top left, #00ac9a 0%, #00ac9a 60%, #00a28f 60%, #00a28f 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #00ac9a), color-stop(80, #00ac9a), color-stop(80, #00a28f), color-stop(100, #00a28f));
+  background-image: -webkit-linear-gradient(top left, #00ac9a 0%, #00ac9a 60%, #00a28f 60%, #00a28f 100%);
+  background-image: linear-gradient(to bottom right, #00ac9a 0%, #00ac9a 60%, #00a28f 60%, #00a28f 100%);
+}
+.case-study .iconset img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.case-study .download-img {
+  height: 115px;
+  background-color: #d9d9d9;
+  position: relative;
+}
+.case-study .download-img img {
+  position: absolute;
+  max-width: 55px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.case-study.desktop {
+  display: none;
+}
+.case-study.desktop h1 {
+  text-transform: uppercase;
+  font-family: 'Asap-Bold';
+  margin-top: 65px;
+  margin-bottom: 25px;
+  font-size: 42px;
+}
+@media (min-width: 992px) {
+  .case-study.desktop h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .case-study.desktop h1 {
+    font-size: 70px;
+  }
+}
+.case-study.desktop .download-img {
+  height: 185px;
+}
+@media (min-width: 768px) {
+  .case-study.desktop .download-img img {
+    max-width: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .case-study.desktop .download-img img {
+    max-width: 125px;
+  }
+}
+.case-study.desktop .iconset {
+  height: 185px;
+}
+@media (min-width: 768px) {
+  .case-study.desktop .iconset img {
+    max-width: 180px;
+  }
+}
+@media (1200px) {
+  .case-study.desktop .iconset img {
+    max-width: 275px;
+  }
+}
+@media (min-width: 768px) {
+  .case-study.desktop {
+    display: block;
+  }
+}
+.case-study.mobile .iconset img {
+  max-width: 100px;
+}
+@media (min-width: 768px) {
+  .case-study.mobile {
+    display: none;
+  }
 }

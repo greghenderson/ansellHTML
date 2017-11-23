@@ -43,7 +43,7 @@
 .video-col {
     clear:left;
 
-    p {
+    &>p {
         margin-bottom: 55px;
     }
 }
@@ -169,7 +169,110 @@
     .panel-heading {
         + .panel-collapse > .panel-body,
         + .panel-collapse > .list-group {
-        border-top: 1px solid @ansell-light;
+            border-top: 1px solid @ansell-light;
+        }
+    }
+}
+
+.case-study-row {
+    margin: 0;
+
+    .case-study-col {
+        padding: 0;
+    }
+}
+
+.case-study {
+    margin-bottom: 30px;
+
+    h1 {
+        color: @ansell-light;
+    }
+
+    .iconset {
+        height: 115px;
+        position: relative;
+        .ansell-gradient;
+
+        img {
+            position: absolute;
+            .center-absolute;
+        }
+    }
+
+    .download-img {
+        height: 115px;
+        background-color: @protection-color;
+        position: relative;
+
+        img {
+            position: absolute;
+            max-width: 55px;
+            .center-absolute;
+        }
+    }
+
+    &.desktop {
+        display: none;
+
+        h1 {
+            text-transform: uppercase;
+            font-family: 'Asap-Bold';
+            margin-top: 65px;
+            margin-bottom: 25px;
+            font-size: 42px;
+
+            @media (min-width: @screen-md-min) {
+                font-size: 50px;
+            }
+
+            @media (min-width: @screen-lg-min) {
+                font-size: 70px;
+            }
+        }
+
+        .download-img {
+            height: 185px;
+
+                img {
+                    @media (min-width: @screen-sm-min) {
+                        max-width: 80px;
+                    }
+
+                    @media (min-width: @screen-lg-min) {
+                        max-width: 125px;
+                    }
+                } 
+        }
+
+        .iconset {
+            height: 185px;
+
+            img {
+                @media (min-width: @screen-sm-min) {
+                    max-width: 180px;
+                }
+
+                @media (@screen-lg-min) {
+                    max-width: 275px;
+                }
+            }
+        }
+
+        @media (min-width: @screen-sm-min) {
+            display: block;
+        }
+    }
+
+    &.mobile {
+        .iconset {
+            img {
+                max-width: 100px;
+            }
+        }
+
+        @media (min-width: @screen-sm-min) {
+            display: none;
         }
     }
 }
