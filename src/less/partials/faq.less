@@ -164,3 +164,12 @@
         padding: 25px 65px;
     }
 }
+
+.panel-group {
+    .panel-heading {
+        + .panel-collapse > .panel-body,
+        + .panel-collapse > .list-group {
+        border-top: 1px solid @ansell-light;
+        }
+    }
+}
