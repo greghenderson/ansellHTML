@@ -39,13 +39,16 @@ $(document).ready(function() {
         // nextPage: $example.find('.nextPage')
     }
 
-
-    var $sliderFrame = $('.frame');
-    $('.frame').each(function(i, e){
-        $(this).addClass('frame-'+i);
-        var scrollbarOption = {scrollBar: $('.frame-'+i).next('.scrollbar')}
-        new Sly($('.frame-'+i), $.extend( slyOptions, scrollbarOption )).init();
+    $(window).on("load", function (e) {
+        var $sliderFrame = $('.frame');
+        $('.frame').each(function(i, e){
+            console.log('ehem');
+            $(this).addClass('frame-'+i);
+            var scrollbarOption = {scrollBar: $('.frame-'+i).next('.scrollbar')}
+            new Sly($('.frame-'+i), $.extend( slyOptions, scrollbarOption )).init();
+        });
     });
+    
 
     $(window).resize(function(e) {
         if($sliderFrame !== undefined){
