@@ -41,6 +41,8 @@
 }
 
 .hero-teasers {
+    margin-top: 90px;
+
     >[class*="col-"] {
         margin-bottom: 30px;
 
@@ -56,14 +58,21 @@
 
     @media (min-width: @screen-sm-min) {
         max-width: 400px;
-        margin: 200px auto 0;
+        margin: 130px auto 0;
     }
 
     @media (min-width: @screen-md-min) {
-        margin-top: 340px;
         margin-left: -5px;
         margin-right: -5px;
         max-width: 100%;
+    }
+
+    @media (min-height: 769px) {
+        margin-top: 140px;
+    }
+
+    @media (min-height: 901px) {
+        margin-top: 300px;
     }
 
     h6 {
