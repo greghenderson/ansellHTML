@@ -8110,7 +8110,7 @@ body {
   }
 }
 .hero-teasers {
-  margin-top: 70px;
+  margin: 70px auto 0;
 }
 .hero-teasers > [class*="col-"] {
   margin-bottom: 30px;
@@ -8129,7 +8129,6 @@ body {
 @media (min-width: 768px) {
   .hero-teasers {
     max-width: 400px;
-    margin: 130px auto 0;
   }
 }
 @media (min-width: 992px) {
